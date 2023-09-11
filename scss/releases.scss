@@ -3,7 +3,7 @@
   h1 {
     color: #fff;
     font-family: $UniB;
-    margin-left: 28px;
+    text-align: center;
     font-size: 38px;
   }
 
@@ -12,7 +12,8 @@
     align-items: center;
     flex-wrap: wrap;
     row-gap: 50px;
-    margin-left: 60px;
+    margin: 0 auto;
+    max-width: 900px;
     .new-rel-box {
       display: flex;
       flex-direction: column;
@@ -93,18 +94,19 @@
 }
 
 .artists-wrapper {
+  width: 100%;
   h1 {
     color: #fff;
     font-family: $UniB;
-    margin-left: 28px;
+    text-align: center;
     font-size: 38px;
   }
   .artist-container {
-    margin: 40px 60px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 60px;
-    margin-left: 170px;
+    margin: 40px auto;
+    max-width: 750px;
     .artist-box {
       display: flex;
       align-items: center;
@@ -142,26 +144,41 @@
   }
 }
 
-@media screen and (max-width: 1085px){
-  .body-wrapper{
-    .artist-container{
-      margin-left: 90px;
-    }
-  }
-}
 
 @media screen and (max-width: 950px){
   .body-wrapper{
     .artist-container{
-      margin-left: 50px;
+      max-width: 620px;
       .artist-box{
         width: 620px;
         .artist-desc{
         p{
-          width: 280px;
+          width: 250px;
         }
       }
     }
   }
 }
 }
+
+@media screen and (max-width: 907px){
+  .body-wrapper{
+    .new-rel-wrapper {
+      .new-rel-box-container {
+        max-width: 600px;
+  }
+}
+  }
+}
+
+@media screen and (max-width: 900px){
+  .body-wrapper{
+    .artist-container{
+      .artist-box{
+        width: 620px;
+      }
+    }
+  }
+}
+
+

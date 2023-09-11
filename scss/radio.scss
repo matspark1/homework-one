@@ -102,7 +102,6 @@
 
 .local-radio{
     margin-bottom: 50px;
-
     h1{
         font-family: $UniB;
         color: #fff;
@@ -110,7 +109,7 @@
         margin-left: 45px;
         margin-bottom: 40px;
         font-size: 40px;
-        width: 300px;
+
     }
     .local-r-container{
         margin-left: 40px;
@@ -149,4 +148,21 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width: 1580px){
+  .body-wrapper{
+    .local-radio{
+      h1{
+        margin: 50px auto;
+        width: 230px;
+      }
+      .local-r-container{
+        margin: 0 auto;
+        width: 60%;
+      }
+     
+    }
+  }
 }
